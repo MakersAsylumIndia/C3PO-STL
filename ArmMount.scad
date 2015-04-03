@@ -12,7 +12,7 @@ bodyMountHoleRadius=22;
 bodyMountHoleRadius=22;
 
 plateDiameter=bodyMountHoleRadius+35;
-squareMountHeight=30;
+squareMountHeight=24;
 ArmMount();
 
 module ArmMount()
