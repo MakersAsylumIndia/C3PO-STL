@@ -7,11 +7,11 @@ nutDiameter=25;
 $fn=100;
 depth=5;
 
-bodyMountHoleRadius=22;
 
-bodyMountHoleRadius=22;
 
-plateDiameter=bodyMountHoleRadius+35;
+bodyMountHoleRadius=22.5;
+
+plateDiameter=65;
 squareMountHeight=24;
 ArmMount();
 
@@ -30,7 +30,7 @@ module ArmMount()
 
 			translate([0,0,0.1])
 			{
-				cylinder(r1=1, r2=12,h=20, center=true);
+				cylinder(r1=1, r2=14,h=20, center=true);
 			}
 
 			
@@ -62,7 +62,7 @@ module bodyMountHole()
 {
 	translate([bodyMountHoleRadius,0,14])
 	{
-		cylinder(r=2, h=13, center=true );
+		cylinder(r=2, h=20, center=true );
 		
 	}
 

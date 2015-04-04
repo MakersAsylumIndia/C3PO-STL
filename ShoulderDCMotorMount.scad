@@ -6,9 +6,9 @@ nutDiameter=25;
 $fn=100;
 depth=12;
 shoulderDCMount();
-bodyMountHoleRadius=22;
+bodyMountHoleRadius=22.5;
 
-plateDiameter=bodyMountHoleRadius+35;
+plateDiameter=60;
 module shoulderDCMount()
 {
 	difference()
