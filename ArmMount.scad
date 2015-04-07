@@ -9,7 +9,7 @@ depth=5;
 
 
 
-bodyMountHoleRadius=22.5;
+bodyMountHoleRadius=27.5;
 
 plateDiameter=65;
 squareMountHeight=24;
@@ -22,15 +22,15 @@ module ArmMount()
 		union()
 		{
 			//cube([16,16,squareMountHeight], center=true);
-			cylinder(r=9, h=squareMountHeight, center=true);
+			cylinder(r=12, h=squareMountHeight, center=true);
 			translate([0,0,(squareMountHeight/2-depth/2)])
 			{
 				cylinder(r=plateDiameter/2,h=depth, center=true);
 			}
 
-			translate([0,0,0.1])
+			translate([0,0,-1])
 			{
-				cylinder(r1=1, r2=14,h=20, center=true);
+				cylinder(r1=1, r2=23,h=23, center=true);
 			}
 
 			
@@ -39,7 +39,7 @@ module ArmMount()
 		{
 			translate([0,0,6])
 			{
-				cube([11,11,squareMountHeight], center=true);
+				cube([12,12,squareMountHeight], center=true);
 			}
 
 			bodyMountHole();

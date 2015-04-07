@@ -1,5 +1,5 @@
-innerDiameter=6;
-OuterSquareSide=10.9;
+innerDiameter=6.2;
+OuterSquareSide=11.5;
 $fn=100;
 shaftMount();
 module shaftMount()
@@ -9,7 +9,7 @@ module shaftMount()
 	{
 		union()
 		{
-			cube([OuterSquareSide,OuterSquareSide,25], center=true);
+			cube([OuterSquareSide,OuterSquareSide,30], center=true);
 		}
 
 		union()
@@ -17,7 +17,7 @@ module shaftMount()
 			translate([0,0,2.6])
 			{
 
-				cylinder(r=innerDiameter/2, h=20, center=true);
+				cylinder(r=innerDiameter/2, h=25, center=true);
 			}
 			
 			translate([0,0,-2.6])

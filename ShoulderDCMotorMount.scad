@@ -1,14 +1,14 @@
 DCMotorOD=40;
 shaftDiameter=6;
-DcMotorScrewDiameter=13.3;
+DcMotorScrewDiameter=14;
 screwSpacing=3;
-nutDiameter=25;
+nutDiameter=28;
 $fn=100;
 depth=12;
 shoulderDCMount();
-bodyMountHoleRadius=22.5;
+bodyMountHoleRadius=27.5;
 
-plateDiameter=60;
+plateDiameter=65;
 module shoulderDCMount()
 {
 	difference()
@@ -42,7 +42,7 @@ module shoulderDCMount()
 
 module nutSpacing()
 {
-	translate([0,0,(depth-screwSpacing)/2])
+	translate([0,0,(depth-screwSpacing)/2-1.5])
 	{
 		cylinder(r=nutDiameter/2, h=(depth-screwSpacing), center=true );
 	}
