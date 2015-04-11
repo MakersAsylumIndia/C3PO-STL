@@ -22,7 +22,8 @@ module ArmMount()
 		union()
 		{
 			//cube([16,16,squareMountHeight], center=true);
-			cylinder(r=12, h=squareMountHeight, center=true);
+			translate([0,0,-10])
+			cylinder(r=12, h=squareMountHeight+10, center=true);
 			translate([0,0,(squareMountHeight/2-depth/2)])
 			{
 				cylinder(r=plateDiameter/2,h=depth, center=true);
@@ -37,7 +38,7 @@ module ArmMount()
 		}
 		union()
 		{
-			translate([0,0,6])
+			translate([0,0,0])
 			{
 				cube([12,12,squareMountHeight], center=true);
 			}

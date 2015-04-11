@@ -9,7 +9,7 @@ module shaftMount()
 	{
 		union()
 		{
-			cube([OuterSquareSide,OuterSquareSide,30], center=true);
+			cube([OuterSquareSide,OuterSquareSide,18], center=true);
 		}
 
 		union()
